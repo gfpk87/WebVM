@@ -4,13 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Ubuntu 22</title>
-        <script src="system.js"></script>
     </head>
     <body>
         <h1>Running Ubuntu 22</h1>
-        <input type="text">
-        <button onclick="runcmd()">Send</button>
+        <input type="text" id="cmd" style="width:30%;"/>
+        <button onclick="runcmd()" style="width:50px;height:30px;">Send</button>
+        <h4>User and path</h4><h4 id="prompt">undefined@undefined</h4>
+        <br>
+        <hr><h4>Console (Used PSH shell)</h4><hr>
         <div id="cons">
         </div>
+        <script src="system.js"></script>
     </body>
 </html>
