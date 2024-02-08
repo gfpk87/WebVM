@@ -2,4 +2,44 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device"
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Ubuntu 20</title>
+        <style>
+            * {
+                margin: 2px;
+                padding: 2px;
+                
+            }
+            body {
+                font-family: 微软雅黑;
+            }
+            input {
+                width: 35%;
+            }
+            button {
+                width: 13%;
+                height: 3.5%;
+            }
+            div {
+                width: 90%;
+                height: 420px;
+                border: 3px solid;
+                overflow-x: auto;
+                overflow-y: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Running Ubuntu 20</h1>
+        <p>This isn't real Ubuntu System!!!</p>
+        <br>
+        <h4 id="prompt">Command Prompt:</h4>
+        <input type="text" id="cmd" />
+        <button id="send" onclick="c()">Send to system</button>
+        <hr>
+        <div id="console">
+            This system is using PShell.<br>
+            Please use the scroll bar.<br>
+        </div>
+        <script src="os.js"></script>
+    </body>
